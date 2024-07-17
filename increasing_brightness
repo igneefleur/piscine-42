@@ -1,0 +1,11 @@
+#!/bin/zsh
+
+INDEX=1.0
+
+while [ 1 ]
+do
+	INDEX=$(( INDEX+0.001 )) 
+        xrandr --output eDP --brightness $INDEX
+        #echo $INDEX
+	sleep 1
+done
